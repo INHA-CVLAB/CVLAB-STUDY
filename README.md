@@ -7,7 +7,7 @@
 - [ ] Decoder 부분 설명  
 - [ ] Encoder 부분 설명
   
-  ## 학습
+  ## 
 - [ ] Pascal VOC로 트레이닝  
 - [ ] Kitti로 트레이닝  
 - [ ] 

@@ -1,13 +1,13 @@
 ### CVLAB-STUDY  
 
-- [x] SqueezeNet 모델 구조 및 설명  
-- [x] MobileNetV1,2 모델 구조 및 설명  
-- [x] IncpetionV1,2 모델 구조 및 설명  
-- [x] SSD.Tensorflow Loss함수 및 모델 소개   
-- [ ] Decoder 부분 설명  
-- [ ] Encoder 부분 설명
+- [x] SqueezeNet model structure and code (18.12.21)  
+- [x] MobileNetV1,2 model structure and code (12.28)   
+- [x] IncpetionV1,2 model structure and code (19.1.4)  
+- [x] SSD.Tensorflow Loss function and code (1.11)   
+- [x] Decoder part explain  (1.21)
+- [ ] Encoder part explain  (1.21)
   
   ## 
-- [ ] Pascal VOC로 트레이닝  
-- [ ] Kitti로 트레이닝  
+- [ ] Train by Pascal VOC and test  
+- [ ] Train by Kitti and test
 - [ ] 

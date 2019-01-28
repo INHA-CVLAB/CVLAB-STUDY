@@ -11,7 +11,7 @@ import pickle
 import random
 import numpy as np
 
-from keras.datasets import cifar10, mnist, fashion_mnist
+from keras.datasets import cifar10
 from keras.utils import to_categorical
 
 class_num = 10

@@ -1,14 +1,22 @@
 # -*- coding:utf-8 -*-
 
 import os
-import sys
-import time
-import pickle
-import random
 import numpy as np
 from scipy import misc
 
 from keras.utils import to_categorical
+
+def normalize(X_train, X_test):
+    '''
+        MEAN and STD are calculated from Train data.
+    '''
+    mean = np.mean(X_train, axis=(0, 1, 2, 3))
+    std = np.std(X_train, axis=(0, 1, 2, 3))
+
+    X_train = (X_train - mean) / std
+    X_test = (X_test - mean) / std
+
+    return X_train, X_test
 
 def tiny_imagenet():
     '''
@@ -38,7 +46,7 @@ def tiny_imagenet():
             if len(np.shape(X)) == 2:
                 X_train[i] = np.array([X, X, X])
             else:
-                X_train[i] = np.transpose(X, (2, 0, 1))
+                X_train[i] = np.transpose(X, (2, 0, 1)) #(N, C, W, H)
             y_train[i] = j
             i += 1
         j += 1
@@ -51,8 +59,6 @@ def tiny_imagenet():
 
     X_test = np.zeros([num_classes * 50, 3, 64, 64], dtype=np.float32)
     y_test = np.zeros([num_classes * 50], dtype=np.float32)
-
-    print('loading test images...')
 
     i = 0
     testPath = path + '/val/images'
@@ -73,6 +79,7 @@ def tiny_imagenet():
 
     X_train = X_train.astype(np.float32)
     X_test = X_test.astype(np.float32)
+
     # X_train /= 255.0
     # X_test /= 255.0
 
@@ -96,10 +103,15 @@ def tiny_imagenet():
     np.random.seed(seed)
     np.random.shuffle(y_train)
 
+    print(X_train.shape, X_train.dtype) #(100000, 64, 64, 3), float32 - 500 * 200
+    print(y_train.shape, y_train.dtype) #(100000, 200), float32
+    print(X_test.shape, X_test.dtype) #(10000, 64, 64, 3), float32 - 50 * 200
+    print(y_test.shape, y_test.dtype) #(10000, 200), float32
+
     return X_train, y_train, X_test, y_test
 
 def get_annotations_map():
-    valAnnotationsPath = './tiny-imagenet-200/val/val_annotations.txt'
+    valAnnotationsPath = '../data/tiny-imagenet-200/val/val_annotations.txt'
     valAnnotationsFile = open(valAnnotationsPath, 'r')
     valAnnotationsContents = valAnnotationsFile.read()
     valAnnotations = {}

@@ -5,7 +5,7 @@ import pickle
 import random
 import numpy as np
 
-from keras.datasets import mnist, fashion_mnist
+from keras.datasets import mnist
 from keras.utils import to_categorical
 
 def normalize(X_train, X_test):

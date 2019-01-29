@@ -3,7 +3,6 @@
 Pure data. Not tfrecord.
 '''
 
-
 import os
 import sys
 import time
@@ -11,13 +10,12 @@ import pickle
 import random
 import numpy as np
 
-from keras.datasets import cifar10
+from keras.datasets import cifar10, mnist, fashion_mnist
 from keras.utils import to_categorical
 
 class_num = 10
 image_size = 32
 img_channels = 3
-
 
 # ========================================================== #
 # ├─ prepare_data()
@@ -35,7 +33,7 @@ def download_data():
     download = False
     if os.path.exists(fpath) or os.path.isfile(fname):
         download = False
-        print("DataSet aready exist!")
+        print("DataSet already exist!")
     else:
         download = True
     if download:
@@ -95,7 +93,7 @@ def load_data(files, data_dir, label_count): #[data_batch_1, ... , data_batch_5]
     return data, labels
 
 
-def prepare_data():
+def load_cifar10():
     print("======Loading data======")
     download_data()
     data_dir = '../data/cifar-10-batches-py'
@@ -175,24 +173,6 @@ def data_augmentation(batch):
 
 
 #=================================== What else =================================#
-def load_mnist() :
-    (train_data, train_labels), (test_data, test_labels) = mnist.load_data()
-
-    train_data = np.expand_dims(train_data, axis=-1)
-    test_data = np.expand_dims(test_data, axis=-1)
-
-    train_data, test_data = normalize(train_data, test_data)
-
-    train_labels = to_categorical(train_labels, 10)
-    test_labels = to_categorical(test_labels, 10)
-
-    seed = 777
-    np.random.seed(seed)
-    np.random.shuffle(train_data)
-    np.random.seed(seed)
-    np.random.shuffle(train_labels)
-
-    return train_data, train_labels, test_data, test_labels
 
 def load_fashion() :
     (train_data, train_labels), (test_data, test_labels) = fashion_mnist.load_data()

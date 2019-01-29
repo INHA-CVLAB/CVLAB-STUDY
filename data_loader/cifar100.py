@@ -46,6 +46,7 @@ def load_cifar100() :
     return train_data, train_labels, test_data, test_labels
 #===============================================================================#
 
+#================================== Hard way =================================#
 def unpickle(file):
     with open(file, 'rb') as fo:
         dic = pickle.load(fo, encoding='bytes')
@@ -138,7 +139,7 @@ def main():
     save_imgs_to_disk('../data/cifar-100-python/', x_train, x_train_filenames)
     save_imgs_to_disk('../data/cifar-100-python/', x_test, x_test_filenames)
     print("IMGS saved successfully")
-
+#===============================================================================#
 
    #  save_numpy_to_disk('cifar-100-python/x_train.npy', x_train)
    # save_numpy_to_disk('cifar-100-python/y_train.npy', y_train)

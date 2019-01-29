@@ -5,7 +5,7 @@ import pickle
 import random
 import numpy as np
 
-from keras.datasets import mnist
+from keras.datasets import mnist, fashion_mnist
 from keras.utils import to_categorical
 
 def normalize(X_train, X_test):
@@ -18,7 +18,7 @@ def normalize(X_train, X_test):
 
     return X_train, X_test
 
-def mnist() :
+def load_mnist() :
     (train_data, train_labels), (test_data, test_labels) = mnist.load_data()
 
     train_data = np.expand_dims(train_data, axis=-1) # train_data.reshape(-1, 28, 28, 1)
@@ -39,4 +39,4 @@ def mnist() :
     val_data = train_data[num_of_test_data:]
     val_labels = train_labels[num_of_test_data:]
 
-    return train_data, train_labels, val_data, val_labels, test_data, test_labels
+    return (train_data, train_labels), (val_data, val_labels), (test_data, test_labels)

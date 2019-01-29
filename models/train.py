@@ -1,6 +1,6 @@
 import argparse
 from data_loader.mnist import load_mnist
-from utils import utility
+import utils
 
 def get_argument_parser(model_name):
     '''
@@ -83,7 +83,7 @@ def train(model, model_name):
 
     # save the training progress to an image file
     if args.plot_training_progress:
-        utility.plot(history = hist, path = args.path_for_plot, title = model_name)
+        utils.plot(history = hist, path = args.path_for_plot, title = model_name)
         print('[training progress saved as {args.path_for_plot}]')
 
     # save the model and trained weights in the configured path

@@ -17,6 +17,6 @@
 
    
  Detection Alogrithm Analysis_Keras  
-- [] SSD.Tensorflow Loss function explain and code review   
-- [] Decoder part explain 
-- [] Encoder part explain 
+- [ ] SSD.Tensorflow Loss function explain and code review   
+- [ ] Decoder part explain 
+- [ ] Encoder part explain 

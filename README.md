@@ -6,7 +6,7 @@
 - [x] IncpetionV1,2 model structure explain and code review  
     
  
- Detection Alogrithm Analysis  
+ Detection Alogrithm Analysis_Tensorflow  
 - [x] SSD.Tensorflow Loss function explain and code review   
 - [x] Decoder part explain 
 - [x] Encoder part explain 
@@ -16,3 +16,7 @@
 - [ ] Train by Kitti and test
 
    
+ Detection Alogrithm Analysis_Keras  
+- [] SSD.Tensorflow Loss function explain and code review   
+- [] Decoder part explain 
+- [] Encoder part explain 

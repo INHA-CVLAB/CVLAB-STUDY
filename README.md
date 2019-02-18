@@ -12,8 +12,9 @@
 - [x] Encoder part explain 
   
  Train  
-- [x] Train by Pascal VOC(2007, 2012) and test(2007)  -19.01.25-
+- [x] Train by Pascal VOC(2007, 2012) and test(2007) : mAP 77.8% -19.01.25-
 - [ ] Train by Kitti and test
+- 
 
    
  Detection Alogrithm Analysis_Keras  

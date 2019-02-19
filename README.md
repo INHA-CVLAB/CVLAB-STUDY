@@ -25,10 +25,10 @@
   
     
 ---
-|VOC0712 |SSD + MobileNet|SSD + SqueezeNet| SSD + Inception |  SSD + VGG(Original)| Pelee(SOTA) |
+|VOC0712 / msCOCO |SSD + MobileNet|SSD + SqueezeNet| SSD + Inception |  SSD + VGG(Original)| Pelee(SOTA) |
 |----|:----:|:----:|:----:|:----:|:----:|
 |# parameters| 6.8M | - | - | 34.3M | 5.4M |
-|Expected|mAP=0.727  |mAP=0.643  |mAP=0.782 |mAP=0.778 |mAP=76.4|
+|Expected|mAP=0.727  |mAP=0.643  |mAP=0.782 |mAP=0.778 |mAP=76.4 / 22.4 |
 |Result|  |  |  |  | |
 |FPS(Intel i7)| | | | | |
 

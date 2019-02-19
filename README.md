@@ -12,7 +12,7 @@
 - [x] Encoder part explain 
   
  Train  
-- [x] Train by Pascal VOC(2007, 2012) and test(2007) : mAP 77.8% ([For detail](https://github.com/INHA-CVLAB/CVLAB-STUDY.wiki.git)) -19.01.25-
+- [x] Train by Pascal VOC(2007, 2012) and test(2007) : mAP 77.8% ([For detail](https://github.com/INHA-CVLAB/CVLAB-STUDY.wiki)) -19.01.25-
 - [ ] Train by Kitti and test
 - [ ] Train by msCOCO and test : 
 

@@ -25,7 +25,7 @@
   
     
 ---
-|VOC0712 |SSD + MobileNet|SSD + SqueezeNet| SSD + Inception |
-|---|-----|-----|------|
-|Expected|mAP=0.727  |mAP=0.643  |  |
-|Result|  |  |  |
+|VOC0712 |SSD + MobileNet|SSD + SqueezeNet| SSD + Inception |  SSD + VGG(Original)|
+|---|-----|-----|------|---|
+|Expected|mAP=0.727  |mAP=0.643  |mAP=0.78.2 |mAP=0.778 |
+|Result|  |  |  |  |

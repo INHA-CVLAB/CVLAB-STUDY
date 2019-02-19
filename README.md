@@ -25,7 +25,9 @@
   
     
 ---
-|VOC0712 |SSD + MobileNet|SSD + SqueezeNet| SSD + Inception |  SSD + VGG(Original)|
-|---|:-----:|:-----:|:------:|:------:|
-|Expected|mAP=0.727  |mAP=0.643  |mAP=0.782 |mAP=0.778 |
-|Result|  |  |  |  |
+|VOC0712 |SSD + MobileNet|SSD + SqueezeNet| SSD + Inception |  SSD + VGG(Original)| Pelee |
+|---|:-----:|:-----:|:------:|:------:|:----:|
+|# parameters| 6.8M | - | - | 34.3M | 5.4M |
+|Expected|mAP=0.727  |mAP=0.643  |mAP=0.782 |mAP=0.778 |mAP=76.4|
+|Result|  |  |  |  | |
+|FPS(Intel i7)| | | | | |

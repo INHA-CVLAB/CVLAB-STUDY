@@ -35,6 +35,6 @@
 |VOC0712 |Tiny-YOLOv2|YOLOv2| 
 |----|:----:|:----:|
 |# parameters| 15.9M | 58M | 
-|Expected|mAP=0.57.1  |mAP=0.69  |
+|Expected|mAP=0.571  |mAP=0.69  |
 |Result| - | - |
 |FPS(Intel i7)| - | - |

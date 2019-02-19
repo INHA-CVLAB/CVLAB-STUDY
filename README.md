@@ -21,3 +21,9 @@
 - [ ] SSD.Tensorflow Loss function explain and code review   
 - [ ] Decoder part explain 
 - [ ] Encoder part explain 
+
+
+|   |SSD + MobileNet|SSD + SqueezeNet| SSD + Inception |
+|---|-----|-----|------|
+|Expected|mAP=0.727  |mAP=0.643  |  |
+|Result|  |  |  |

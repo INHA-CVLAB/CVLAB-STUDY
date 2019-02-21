@@ -29,7 +29,7 @@
 |----|:----:|:----:|:----:|:----:|:----:|
 |# parameters| 6.8M | - | - | 34.3M | 5.4M |
 |Expected|mAP=0.727  |mAP=0.643  |mAP=0.782 |mAP=0.778 |mAP=76.4 / 22.4 |
-|Result|  |  |  |  | |
+|Result| 2.22  | 2.22 |  |  | 2.27 |
 |FPS(Intel i7)| | | | | |
 
 |VOC0712 |Tiny-YOLOv2|YOLOv2| 
@@ -38,3 +38,12 @@
 |Expected|mAP=0.571  |mAP=0.69  |
 |Result| - | - |
 |FPS(Intel i7)| - | - |
+  
+|VOC0712 |SSD + SqueezeNet BH's| 
+|----|:----:|
+|# parameters| 15.9M | 
+|Expected|mAP=0.571  |
+|Result| 2.22 |
+|FPS(Intel i7)| 2.22 |
+
+

@@ -23,7 +23,7 @@
 - [ ] Encoder part explain 
 
   
-    
+Detection Result
 ---
 |VOC0712 / msCOCO |SSD + MobileNet|SSD + SqueezeNet| SSD + Inception |  SSD + VGG(Original)| Pelee(SOTA) |
 |----|:----:|:----:|:----:|:----:|:----:|
@@ -45,5 +45,18 @@
 |Expected|mAP=0.571  |
 |Result| (2.22) |
 |FPS(Intel i7)| (2.22) |
+  
+  
+  
+Classification Result
+---
+| | Cifar10 | Cifar10*| Cifar100 | Cifar100* | Tiny-Imagenet | etc |
+|----|:----:|:----:|:----:|:----:|:----:|:----:|
+|MobileNetv2| | | | |  | |
+|ShuffleNetv2| | | | |  | |
+|Pelee       | | | | |  | |
 
 
+
+
+※ '*' means augmented data.

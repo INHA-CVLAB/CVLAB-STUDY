@@ -51,9 +51,10 @@ Detection Result
 Classification Result
 ---
 | | Cifar10 | Cifar10*| Cifar100 | Cifar100* | Tiny-Imagenet | etc |
-|----|:----:|:----:|:----:|:----:|:----:|:----:|
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 |MobileNetv2| | | | |  | |
 |ShuffleNetv2| | | | |  | |
+|DenseNet| | | | |  | |
 |Pelee       | | | | |  | |
 
 

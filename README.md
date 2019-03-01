@@ -56,7 +56,9 @@ Classification Result
 |ShuffleNetv2| | | | |  | |
 |DenseNet| | | | |  | |
 |Pelee       | | | | |  | |
-
+|InceptionV4 | | | | |  | |
+|Inception-resnetv2 | | | | |  | |
+|ResNeXt | | | | |  | |
 
 
 

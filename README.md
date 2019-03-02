@@ -50,13 +50,13 @@ Detection Result
   
 Classification Result
 ---
-| | Cifar10 | Cifar10*| Cifar100 | Cifar100* | Tiny-Imagenet | etc |
+| | Cifar10 | Cifar10*| Cifar100 | Cifar100* | Tiny-Imagenet | etc | 
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 |MobileNetv2| | | | |  | |
 |ShuffleNetv2| | | | |  | |
-|DenseNet| | | | |  | |
+|DenseNet| | 86.70 | | |  |19.2M|
 |Pelee       | | | | |  | |
-|InceptionV4 | | | | |  | |
+|InceptionV4 | | 75.04 | | |  |51.1M |
 |Inception-resnetv2 | | | | |  | |
 |ResNeXt | | | | |  | |
 

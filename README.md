@@ -54,7 +54,7 @@ Classification Result
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 |MobileNetv2|74.6 | | | |  |2.3M|
 |ShuffleNetv2| | | | |  | |
-|DenseNet| | 86.70 | | |  |6.5M|
+|DenseNet|82.5 | 86.70 | | |  |6.5M|
 |Pelee   |88.4 | | | |  |8.4M |
 |InceptionV4 | | 75.04 | | |  |51.1M |
 |Inception-resnetv2 | | | | |  | |
